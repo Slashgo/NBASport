@@ -1,0 +1,31 @@
+﻿<Window x:Class="NBAsport.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NBAsport"
+        mc:Ignorable="d"
+        Title="MainWindow"
+        Height="450"
+        Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="16*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Frame x:Name="Nav"
+               NavigationUIVisibility="Hidden"
+               Source="/Pages/TeamsPage.xaml" />
+
+        <TextBlock x:Name="StatusBar"
+                   TextAlignment="Center"
+                       Grid.Row="1"
+                       Background="#FF6995C2"
+                   FontSize="15"
+                   Foreground="White">The season is 2016-2017, and the NBA already has a history of 71 years.</TextBlock>
+
+
+
+
+    </Grid>
+</Window>
